@@ -1,0 +1,35 @@
+{
+    "recommendations": [
+        // my extensions, ofc :P
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "ms-vscode.atom-keybindings",
+        "aaron-bond.better-comments",
+        "calebporzio.better-phpunit",
+        "wmaurer.change-case",
+        "mikestead.dotenv",
+        "editorconfig.editorconfig",
+        "eamodio.gitlens",
+        "ms-vscode.live-server",
+        "shan.code-settings-sync",
+        "bmewburn.vscode-intelephense-client",
+        "stkb.rewrap",
+        "gurumukhi.selected-lines-count",
+
+        // themes & icons
+        "liviuschera.noctis",
+        "pkief.material-icon-theme",
+        "zhuangtongfa.material-theme",
+
+        // up to you
+        "adpyke.codesnap",
+        "pnp.polacode",
+        "shd101wyy.markdown-preview-enhanced",
+        "ms-python.vscode-pylance",
+        "ms-python.python",
+        "emeraldwalk.runonsave",
+        "bradlc.vscode-tailwindcss",
+        "GitHub.codespaces",
+        "antfu.file-nesting"
+    ]
+}
