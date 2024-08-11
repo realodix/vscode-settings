@@ -1,28 +1,34 @@
 {
     // Visuals
     "breadcrumbs.enabled": false,
-    "window.commandCenter": true,
     "workbench.startupEditor": "welcomePage",
     "workbench.colorTheme": "One Dark Pro",
     "workbench.preferredDarkColorTheme": "One Dark Pro",
     "workbench.iconTheme": "material-icon-theme",
-
     // Editor
     "diffEditor.codeLens": true,
     "editor.bracketPairColorization.enabled": true,
     "editor.fontSize": 15,
     "editor.guides.bracketPairs": "active",
     "editor.inlineSuggest.enabled": true,
+    "editor.largeFileOptimizations": false,
     "editor.minimap.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
-    "editor.rulers": [80, 90, 100, 120],
+    "editor.rulers": [
+        80,
+        90,
+        100,
+        120
+    ],
     "editor.scrollBeyondLastLine": false,
+    "editor.stickyScroll.enabled": true,
     "editor.wordWrap": "on",
     "files.autoSave": "onFocusChange",
     "files.eol": "\n",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
+    "markdown.editor.pasteUrlAsFormattedLink.enabled": "never",
     "scss.format.spaceAroundSelectorSeparator": true,
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
@@ -37,40 +43,85 @@
         "*.lock": true,
         "**/*.map": true,
         "**/node_modules": true,
-        "vendor": true
+        "vendor": true,
+        "bun.lockb": true,
+        "package-lock.json": true
     },
     "search.exclude": {
-        "**/*.cache": true
+        "**/.tmp/**": true,
+        "**/*.cache": true,
+        "package-lock.json": true,
+        "yarn.lock": true
     },
     "files.watcherExclude": {
         "**/node_modules/*/**": false
     },
     "files.associations": {
         "*.json.dist": "json",
-        "*.neon": "yaml",
+        // "*.neon": "yaml",
         "*.neon.dist": "yaml",
+        "phpstan.neon": "yaml",
         ".php-cs-fixer.cache": "json",
         ".phpunit.result.cache": "json",
+        "*.adfl.txt": "adfilter"
     },
-
     // VSCode Extensions Settings
+    // https://gist.github.com/realodix/1064520e702711ecdaeca061fd96f09e
+    "sync.gist": "e63504bd2307b9764f49d2a89288d36e",
     "better-comments.multilineComments": false,
     "codesnap.containerPadding": "1em",
     "codesnap.transparentBackground": true,
-    "php.suggest.basic": false,
-    "php.validate.enable": false,
-    "intelephense.completion.triggerParameterHints": false,
+    // "php.validate.enable": false,
     "intelephense.diagnostics.undefinedFunctions": false,
     "intelephense.diagnostics.undefinedMethods": false,
     "intelephense.diagnostics.undefinedProperties": false,
     "intelephense.diagnostics.undefinedTypes": false,
     "intelephense.format.enable": false,
     "intelephense.telemetry.enabled": false,
-    "github.copilot.enable": {
-        "*": true,
-        "plaintext": false,
-    },
     "tailwindCSS.emmetCompletions": true,
     "postcss.validate": false,
     "css.lint.unknownAtRules": "ignore",
+    "git.openRepositoryInParentFolders": "never",
+    "gitlens.gitCommands.skipConfirmations": [
+        "fetch:command",
+        "stash-push:command",
+        "switch:command",
+        "push:command"
+    ],
+    "git.enableSmartCommit": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": true,
+        "plaintext": true,
+        "markdown": false
+    },
+    "codeium.enableConfig": {
+        "*": true,
+        "markdown": true,
+        "adfilter": true,
+        "plaintext": true,
+        "postcss": true
+    },
+    "redhat.telemetry.enabled": false,
+    "gitlens.cloudPatches.enabled": false,
+    "cloudcode.duetAI.project": "api-project-863893270334",
+    "codeium.enableCodeLens": false,
+    // "editor.tokenColorCustomizations": {
+    //     "[One Dark Pro Darker]": {
+    //         "textMateRules": [
+    //             {
+    //                 "scope": ["string.regexp"],
+    //                 "settings": {
+    //                     "foreground": "#32AE85"
+    //                 }
+    //             },
+    //             {
+    //                 "scope": ["punctuation.definition.character-class.php"],
+    //                 "settings": {
+    //                     "foreground": "#7390AA"
+    //                 }
+    //             }
+    //         ]
+    //     }
+    // }
 }
